@@ -8,7 +8,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0-cyvj3.mongodb.net/oministac
     useUnifiedTopology: true
 });
 
-app.use(express.json);
+app.use(express.json());
 app.use(routes);
 
 app.listen(3333);

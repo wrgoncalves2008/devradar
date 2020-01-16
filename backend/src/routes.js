@@ -9,6 +9,4 @@ routes.post('/devs', devcontroller.store);
 
 routes.get('search', searchcontroller.index);
 
-
-
 module.exports = routes;
