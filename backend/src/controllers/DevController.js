@@ -15,7 +15,7 @@ module.exports = {
         let dev = await Dev.findOne({ github_username });
 
         if (!dev) {
-            const responseGit = axios.get(`https://api.github.com/users/${github_username}`);
+            const responseGit = await axios.get(`https://api.github.com/users/${github_username}`);
 
             const { name = login, avatar_url, bio } = responseGit.data;
 
